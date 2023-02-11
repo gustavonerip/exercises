@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #394a6f;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+
+    width: 600px;
+    display: flex;
+    height: 100vh;
+
+    flex-direction: column;
+    align-items:center;
+    justify-content:stretch;
+}
+
+.wrapper p, .wrapper .form p{
+    text-align: center;
+    margin: 32px 0;
+}
+
+.form{
+    max-width: 450px;
+    padding: 64px;
+    border-radius: 12px;
+    margin-top:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    background-color: white;
+}
+
+.form h1{
+    width: 100%;
+    color: #333;
+    font-size: 48px;
+    text-align: center;
+}
+
+.form h1, .form p{
+    text-align: center;
+}
+
+.form p{
+    color: #666;
+    width: 100%;
+    line-height: 21px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+
+
+.form label{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.form label:not(:first-child){
+    margin-top: 8px;
+}
+
+.form input{
+    width: 100%;
+    padding: 14px 12px;
+    color: #333;
+    border: solid 1px #CCC;
+    font-size: 16px;
+}
+
+.form input, .form input[type=submit]{
+    border-radius: 8px;
+}
+
+.form input[type=submit]{
+    border: 0;
+    color: white;
+    margin: 24px 0 0 0;
+    background-color: #70bea4;
+}
+
+.login-link{
+    color: white;
+}
+
+.login-link a, .form a{
+    text-decoration: none;
+    color: #70bea4;
+    cursor: pointer;
+}
