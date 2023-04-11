@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Flix<span>Search</span></a></h1>
+        </div>
+        <div class="container">
+            <h3>Search Movie</h3>
+            <input type="text" class="form-control" placeholder="Search Movide Title ..." id="movie-search-box" onkeyup="findMovies()">
+            <div class="search-list" id="search-list">
+                <!--  <div class="search-list-item">
+                     <div class="search-item-thumbnail">
+                         <img src="images/img-placeholder.jpg" alt="">
+                     </div>
+                     <div class="search-item-info">
+                         <h3>The Little Mermaid</h3>
+                         <p>2023</p>
+                     </div>
+                 </div> -->
+             </div>
+        </div>
+        
+    </header>
+    <main>
+        <!-- Result container -->
+
+            <div class="container">
+                <div class="result-grid" id="result-grid">
+                    
+                </div>
+            </div>
+
+        <!-- End of result container -->
+    </main>
+<!-- APP.JS -->
+<script src="./js/app.js"></script>
+</body>
+</html>

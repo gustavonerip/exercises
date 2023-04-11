@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap');
+
+/* ====================== VARIABLES ====================== */
+$primary-color: #042940;
+$secondary-color: #005C53;
+$accent-color: #DBF227;
+$copy-color: white;
+$bg-color: #01111b;
+$font-family-1: 'Anuphan', sans-serif;
+
+/* ====================== GLOBAL LAYOUT ====================== */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: $bg-color;
+    color: $copy-color;
+    font-family: $font-family-1;
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h3{
+    margin-block: .5rem;
+}
+
+input{
+    padding: 1rem;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container{
+    width: 96%;
+    max-width: 1250px;
+    margin: 2% auto;
+    position: relative;
+
+    h1{
+        margin-block: .5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    h3{
+        text-align: center;
+    }
+}
+
+header{
+    padding: 2rem 1rem;
+    position: relative;
+
+    .logo{
+        h1{
+            text-align: center;
+            a{
+                span{
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+.search-list{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.search-list-item{
+    width: 100%;
+    height: 128px;
+
+    display: flex;
+    gap: 1rem;
+
+    cursor: pointer;
+
+    background-color: $secondary-color;
+
+    img{
+        width: 128px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.hide-search-list{
+    display: none;
+}
+
+.result-grid{
+    display: flex;
+    gap: 2rem;
+    ul{
+        list-style: none;
+    }
+
+    .movie-poster{
+
+        width: 40%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .movie-info{
+        width: 60%;
+        padding: 1rem;
+
+        h3{
+            text-align: left;
+        }
+
+        .movie-title{
+            font-size: 2rem;
+        }
+
+        .movie-misc-info{
+            display: flex;
+            gap: 2rem;
+            font-size: 12px;
+            margin-bottom: 2rem;
+        }
+        p{
+            margin-block: .5rem;
+        }
+    }
+}
